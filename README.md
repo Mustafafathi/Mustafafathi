@@ -1,146 +1,189 @@
-<h1 align="center">Mustafa Fathi</h1>
+ <div align="center">
 
-<p align="center">
-  <strong>Information Systems Engineer | Software Developer | Systems Analyst</strong>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:10172A,50:164E63,100:2563EB&height=210&section=header&text=Mustafa%20Fathi&fontSize=52&fontColor=FFFFFF&fontAlignY=38&desc=INFORMATION%20SYSTEMS%20ENGINEER%20%7C%20SOFTWARE%20DEVELOPER&descSize=13&descAlignY=60&animation=fadeIn" />
+
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=17&duration=3000&pause=1000&color=38BDF8&center=true&vCenter=true&width=700&lines=Systems+Analyst+%7C+Software+Engineer;Designing+and+Building+Information+Systems;Database+Engineering+%7C+System+Integration;Turning+Business+Requirements+into+Solutions" />
+
+<p>
+<img src="https://komarev.com/ghpvc/?username=Mustafafathi&style=for-the-badge&color=2563EB&label=PROFILE+VIEWS" />
+<img src="https://img.shields.io/github/followers/Mustafafathi?style=for-the-badge&color=0E7490&label=FOLLOWERS" />
 </p>
 
-<p align="center">
-  I design and build information systems, from analyzing how an organization works<br>
-  to implementing the database, backend, and integrations that automate it.
-</p>
-
-<p align="center">
-  <a href="#about">About</a> &nbsp;·&nbsp;
-  <a href="#featured-project">Featured Project</a> &nbsp;·&nbsp;
-  <a href="#technical-skills">Skills</a> &nbsp;·&nbsp;
-  <a href="#engineering-focus">Focus</a> &nbsp;·&nbsp;
-  <a href="#contact">Contact</a>
-</p>
+</div>
 
 ---
 
-## About
+## About Me
 
 I am an Information Systems Engineer focused on systems analysis, software architecture, backend development, and database engineering.
 
-I approach software development from a systems perspective: understanding business requirements, analyzing operational workflows, designing technical solutions, and implementing reliable information systems. This profile is built around one complete project, AIS, rather than a list of claims.
+I approach software development from a systems perspective: understanding business requirements, analyzing operational workflows, designing technical solutions, and implementing reliable information systems.
 
-| Discipline | In practice |
-|---|---|
-| Systems analysis | Mapping operational workflows and the roles involved before choosing a technical approach |
-| Requirements engineering | Turning business needs into explicit system rules and integration contracts |
-| Software architecture | Deciding where business logic lives and how components and external systems interact |
-| Database engineering | Relational schema design, stored procedures, triggers, and indexing in SQL Server |
-| Backend development | PHP services for sessions, validation, and integration endpoints |
-| Business process automation | Automating recurring academic workflows: attendance capture, absence handling, and reporting |
+My engineering interests include:
 
----
-
-## Featured Project
-
-### AIS: Student Attendance Information System
-
-Developed for **STI NUST MISIS**, a Russian university (Stary Oskol Technological Institute, a branch of the National University of Science and Technology MISIS).
-
-AIS is a web-based attendance management system built with PHP and Microsoft SQL Server. It covers attendance tracking, academic workflow automation, reporting, and integration with existing university infrastructure.
-
-**Business problem.** Attendance has to be captured reliably in the classroom, reported to several different roles, and connected to systems the university already runs, such as 1C:University and physical access control.
-
-**Technical solution.** A thick-database architecture. Business rules live in SQL Server stored procedures and triggers, while PHP handles sessions, request validation, and UI delivery. External systems connect through narrow contracts: CSV files for 1C:University and signed webhooks for access control.
-
-#### Key engineering features
-
-| Area | What it does |
-|---|---|
-| QR-code attendance | Teachers open QR sessions and students scan them. Sessions are validated and duplicate scans are prevented. |
-| Offline recording | Attendance can be recorded offline in the browser using IndexedDB. |
-| Idempotent synchronization | Offline records sync using SHA-256 idempotency keys, so a retried submission is not applied twice. |
-| Role-based workspaces | Five user roles: administrators, students, teachers, curators, and methodists. |
-| Access-control integration | HMAC-secured webhooks accept events from physical access-control systems, with nonce-based replay protection. |
-| 1C:University exchange | CSV import and export for groups, students, and attendance data. |
-| Database layer | Microsoft SQL Server schema with stored procedures, triggers, and database-level business logic. The scripts define 42 tables, 125 stored procedures, and 17 triggers. |
-
-#### Architecture overview
-
-```mermaid
-flowchart LR
-    subgraph Browser
-        UI["Role workspaces<br/>HTML, CSS, JavaScript"]
-        IDB[("IndexedDB<br/>offline queue")]
-    end
-    subgraph PHP["PHP application"]
-        API["API gateway<br/>sessions, validation, routing"]
-    end
-    subgraph SQL["Microsoft SQL Server"]
-        SP["Stored procedures<br/>business rules"]
-        TBL[("Domain tables")]
-        AUD[("Audit log")]
-        TRG["Triggers"]
-    end
-    ACS["Access-control system"] -- "HMAC-signed webhook" --> API
-    ERP["1C:University"] <-- "CSV import / export" --> API
-    UI --> API
-    IDB -. "sync with idempotency keys" .-> API
-    API --> SP
-    SP --> TBL
-    SP --> AUD
-    TRG --> AUD
-```
-
-#### Technology stack
-
-![PHP](https://img.shields.io/badge/PHP-1f6feb?style=flat-square)
-![Microsoft SQL Server](https://img.shields.io/badge/Microsoft%20SQL%20Server-1f6feb?style=flat-square)
-![T-SQL](https://img.shields.io/badge/T--SQL-1f6feb?style=flat-square)
-![JavaScript](https://img.shields.io/badge/JavaScript-1f6feb?style=flat-square)
-![IndexedDB](https://img.shields.io/badge/IndexedDB-1f6feb?style=flat-square)
-![HTML5](https://img.shields.io/badge/HTML5-1f6feb?style=flat-square)
-![CSS3](https://img.shields.io/badge/CSS3-1f6feb?style=flat-square)
-
-#### Repositories
-
-| Repository | Description |
-|---|---|
-| [ais-system-en](https://github.com/Mustafafathi/ais-system-en) | English edition: README, architecture notes, and an anonymized public distribution of the system |
-| [ais-system-ru](https://github.com/Mustafafathi/ais-system-ru) | Russian edition: delivery package with Russian-language documentation |
-
-I own the system analysis, architecture, database design, and integration model of AIS. AI assistance was used to speed up implementation under my review; the repository documents the split in [AI_COLLABORATION.md](https://github.com/Mustafafathi/ais-system-en/blob/main/AI_COLLABORATION.md).
+- Systems Analysis & Requirements Engineering
+- Software Architecture & Backend Development
+- Database Engineering & Business Logic
+- System Integration & Process Automation
+- Infrastructure Administration & Reliability
 
 ---
 
 ## Technical Skills
 
-Listed technologies are the ones used in AIS.
+### Programming Languages
 
-| Category | Skills |
+<p>
+<img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white"/>
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
+<img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=databricks&logoColor=white"/>
+</p>
+
+### Database Engineering
+
+<p>
+<img src="https://img.shields.io/badge/Microsoft%20SQL%20Server-CC2927?style=for-the-badge&logo=microsoftsqlserver&logoColor=white"/>
+<img src="https://img.shields.io/badge/T--SQL-CC2927?style=for-the-badge&logo=microsoftsqlserver&logoColor=white"/>
+<img src="https://img.shields.io/badge/IndexedDB-315A75?style=for-the-badge"/>
+</p>
+
+### Web Development
+
+<p>
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
+<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
+<img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white"/>
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
+</p>
+
+### Systems & Development Tools
+
+<p>
+<img src="https://img.shields.io/badge/Windows-0078D4?style=for-the-badge&logo=windows&logoColor=white"/>
+<img src="https://img.shields.io/badge/Windows%20Server-0078D4?style=for-the-badge&logo=windows&logoColor=white"/>
+<img src="https://img.shields.io/badge/PowerShell-5391FE?style=for-the-badge&logo=powershell&logoColor=white"/>
+<img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"/>
+<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
+<img src="https://img.shields.io/badge/Apache-D22128?style=for-the-badge&logo=apache&logoColor=white"/>
+</p>
+
+### Integration & Security
+
+<p>
+<img src="https://img.shields.io/badge/REST%20APIs-009688?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Webhooks-2563EB?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/HMAC-Security-475569?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/SHA--256-Data%20Integrity-475569?style=for-the-badge"/>
+</p>
+
+---
+
+## Featured Project
+
+### AIS — Student Attendance Information System
+
+<p align="center">
+<strong>STI NUST MISIS</strong>
+</p>
+
+A web-based student attendance management system developed to automate academic attendance workflows, improve data consistency, and integrate with existing university infrastructure.
+
+**Key Engineering Features**
+
+| Component | Implementation |
 |---|---|
-| Backend Development | PHP 8.2, sqlsrv / PDO_SQLSRV, session handling, role-based access control, HMAC webhook verification, CSV import and export |
-| Database Engineering | Microsoft SQL Server, T-SQL, stored procedures, triggers, indexing strategy, audit logging, relational schema design |
-| Frontend Development | JavaScript, HTML5, CSS3, IndexedDB for offline storage |
-| Systems Analysis | Requirements engineering, operational workflow analysis, role and permission modeling, integration analysis |
-| Software Architecture | Thick-database architecture, separation of presentation, transport, and business rules, integration contracts |
-| Development Tools | Git, GitHub, automated CI checks |
-| Infrastructure | Apache, Windows / XAMPP, Docker Compose for local evaluation |
+| Attendance | QR-based session validation |
+| Offline Mode | IndexedDB browser storage |
+| Synchronization | SHA-256 idempotency keys |
+| Authentication | Role-based access control |
+| Integration | HMAC-secured webhooks |
+| University ERP | CSV exchange with 1C:University |
+| Backend | PHP |
+| Database | Microsoft SQL Server |
+
+**Database Engineering**
+
+<p>
+<img src="https://img.shields.io/badge/42-Tables-2563EB?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/125-Stored%20Procedures-0E7490?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/17-Triggers-7C3AED?style=for-the-badge"/>
+</p>
+
+**Source Code**
+
+<p>
+<a href="https://github.com/Mustafafathi/ais-system-en">
+<img src="https://img.shields.io/badge/English%20Repository-181717?style=for-the-badge&logo=github"/>
+</a>
+<a href="https://github.com/Mustafafathi/ais-system-ru">
+<img src="https://img.shields.io/badge/Russian%20Repository-181717?style=for-the-badge&logo=github"/>
+</a>
+</p>
+
+### Architecture Overview
+
+```mermaid
+flowchart TD
+    A[Students and Teachers] --> B[PHP Application]
+    B --> C[Session Validation]
+    C --> D[SQL Server]
+    D --> E[Stored Procedures]
+    E --> F[Attendance Records]
+    B --> G[IndexedDB Offline Queue]
+    G --> H[Idempotent Synchronization]
+    H --> D
+    B --> I[HMAC Webhooks]
+    I --> J[Access Control System]
+    B --> K[CSV Integration]
+    K --> L[1C:University]
+```
 
 ---
 
 ## Engineering Focus
 
-| Focus | Where it shows in AIS |
+| Discipline | Practical Application |
 |---|---|
-| Designing information systems | Five role-specific workspaces over one shared data model, from scheduling to reporting |
-| Translating business requirements into technical solutions | Absence justification, attendance marking, and reporting workflows expressed as database procedures |
-| Database design and optimization | Indexing strategy built around attendance reporting queries |
-| Backend business logic | Rules enforced in stored procedures and triggers rather than duplicated in application code |
-| System integration | CSV exchange with 1C:University and HMAC-signed webhooks for access control |
-| Reliability and data consistency | Duplicate-scan prevention, idempotent offline sync, and audit logging |
+| Systems Analysis | Requirements and workflow modeling |
+| Software Architecture | Application and database design |
+| Backend Engineering | Server-side business logic |
+| Database Engineering | Relational modeling and SQL optimization |
+| System Integration | Webhooks and external data exchange |
+| Reliability | Validation and duplicate prevention |
+| Automation | Academic workflow automation |
 
 ---
 
-## Contact
+## GitHub Analytics
 
-| Channel | Link |
-|---|---|
-| GitHub | [@Mustafafathi](https://github.com/Mustafafathi) |
-| AIS (English) | [ais-system-en](https://github.com/Mustafafathi/ais-system-en) |
-| AIS (Russian) | [ais-system-ru](https://github.com/Mustafafathi/ais-system-ru) |
+<div align="center">
+
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=Mustafafathi&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&rank_icon=github"/>
+
+<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Mustafafathi&layout=compact&theme=tokyonight&hide_border=true&langs_count=8"/>
+
+</div>
+
+<div align="center">
+
+<img width="75%" src="https://streak-stats.demolab.com?user=Mustafafathi&theme=tokyonight&hide_border=true"/>
+
+</div>
+
+## Contribution Activity
+
+<div align="center">
+
+<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=Mustafafathi&theme=tokyo-night&hide_border=true&area=true"/>
+
+</div>
+
+---
+
+<div align="center">
+
+### Engineering reliable systems through analysis, architecture, and implementation.
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:2563EB,100:10172A&height=110&section=footer"/>
+
+</div>
