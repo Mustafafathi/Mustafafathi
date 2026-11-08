@@ -123,22 +123,30 @@ A web-based student attendance management system developed to automate academic 
 ### Architecture Overview
 
 ```mermaid
-flowchart TD
-    A[Students and Teachers] --> B[PHP Application]
-    B --> C[Session Validation]
-    C --> D[SQL Server]
-    D --> E[Stored Procedures]
-    E --> F[Attendance Records]
-    B --> G[IndexedDB Offline Queue]
-    G --> H[Idempotent Synchronization]
-    H --> D
-    B --> I[HMAC Webhooks]
-    I --> J[Access Control System]
-    B --> K[CSV Integration]
-    K --> L[1C:University]
+flowchart LR
+    subgraph Browser
+        UI["Role workspaces<br/>HTML, CSS, JavaScript"]
+        IDB[("IndexedDB<br/>offline queue")]
+    end
+    subgraph PHP["PHP application"]
+        API["API gateway<br/>sessions, validation, routing"]
+    end
+    subgraph SQL["Microsoft SQL Server"]
+        SP["Stored procedures<br/>business rules"]
+        TBL[("Domain tables")]
+        AUD[("Audit log")]
+        TRG["Triggers"]
+    end
+    ACS["Access-control system"] -- "HMAC-signed webhook" --> API
+    ERP["1C:University"] <-- "CSV import / export" --> API
+    UI --> API
+    IDB -. "sync with idempotency keys" .-> API
+    API --> SP
+    SP --> TBL
+    SP --> AUD
+    TRG --> AUD
 ```
 
----
 
 ## Engineering Focus
 
