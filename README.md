@@ -1,162 +1,183 @@
- 
-<div align="center">
+ <div align="center">
 
-# MUSTAFA FATHI
+# Mustafa Fathi
 
-### INFORMATION SYSTEMS ENGINEER
+**INFORMATION SYSTEMS ENGINEER**
 
-**Systems Analysis · Database Engineering · Backend Development**
-
-Designing information systems around business processes, data integrity, and reliable workflows.
+*Systems Analysis · Database Engineering · Software Development*
 
 <br/>
 
-[![GitHub](https://img.shields.io/badge/GitHub-Mustafafathi-181717?style=flat-square&logo=github)](https://github.com/Mustafafathi)
-[![Systems Engineering](https://img.shields.io/badge/Focus-Systems%20Engineering-2563EB?style=flat-square)](#)
-[![Location](https://img.shields.io/badge/Location-Egypt-64748B?style=flat-square)](#)
+I build information systems by connecting business processes, data architecture, and application logic.
+
+<br/>
+
+[GitHub](https://github.com/Mustafafathi) &nbsp; / &nbsp; [AIS — English](https://github.com/Mustafafathi/ais-system-en) &nbsp; / &nbsp; [AIS — Русский](https://github.com/Mustafafathi/ais-system-ru)
 
 </div>
 
 ---
 
-## `01` / ENGINEERING PROFILE
+### 01 — Perspective
 
-I approach software development from a systems perspective: understanding the operational process, translating requirements into structured workflows, designing the data model, and implementing the application logic.
+## Engineering from the system level.
 
-My primary focus is building database-driven information systems, with particular interest in:
+My approach to software engineering starts before implementation: understanding how a process works, identifying its requirements, modelling its data, and translating that structure into a maintainable information system.
 
-- **Systems Analysis** — requirements analysis, business workflows, and system documentation.
-- **Database Engineering** — relational data modelling, SQL Server, and database-level business logic.
-- **Backend Development** — PHP applications, authentication, and server-side processing.
-- **System Integration** — connecting applications with external services and institutional systems.
+I am particularly interested in the relationship between **business logic, database architecture, and application behaviour** — especially in systems where data integrity and operational reliability matter.
 
-I am particularly interested in engineering solutions where data consistency, process reliability, and maintainability are essential.
+My work brings together:
 
-## `02` / FEATURED PROJECT
+- **Systems analysis** — requirements, business workflows, roles, and process modelling.
+- **Database engineering** — relational data models, SQL Server, and database-level logic.
+- **Backend development** — PHP applications, server-side processing, and authentication.
+- **System integration** — data exchange, webhooks, and connections with existing institutional systems.
 
-### AIS — Student Attendance Information System
+---
 
-**A database-driven attendance management system developed for STI NUST MISIS.**
+### 02 — Selected Work
 
-[![English Repository](https://img.shields.io/badge/Repository-English-2563EB?style=flat-square&logo=github)](https://github.com/Mustafafathi/ais-system-en)
-[![Russian Repository](https://img.shields.io/badge/Repository-Russian-475569?style=flat-square&logo=github)](https://github.com/Mustafafathi/ais-system-ru)
+## AIS / Student Attendance Information System
 
-The project addresses university attendance workflows through a web-based information system connecting students, teachers, administrators, curators, and academic staff.
+**Graduation project · STI NUST MISIS**
 
-**System architecture & implementation**
+A web-based information system designed to manage student attendance workflows within a university environment.
 
-| Layer | Technologies / Responsibilities |
-|---|---|
-| Application | PHP, JavaScript, HTML, CSS |
-| Database | Microsoft SQL Server 2022, T-SQL |
-| Data access | SQLSRV / ODBC |
-| Business logic | Stored procedures, triggers, database constraints |
-| Integration | Webhooks, CSV exchange with 1C:University |
-| Client-side processing | IndexedDB, offline synchronization |
+The system brings together students, teachers, administrators, curators, and methodists through role-based workflows and a shared database.
 
-**Key engineering features**
+<div align="center">
 
-- QR-based attendance sessions with server-side validation and duplicate-scan prevention.
-- Offline attendance capture using IndexedDB, followed by synchronization with SHA-256 idempotency keys.
-- Role-based workflows for five user groups: administrators, students, teachers, curators, and methodists.
-- Database-centric business logic implemented through stored procedures and triggers.
-- HMAC-secured webhooks for integration with physical access-control systems.
-- CSV-based data exchange with 1C:University.
-- Reporting, audit logging, and database-driven notifications.
+[**English Repository ↗**](https://github.com/Mustafafathi/ais-system-en) &nbsp;&nbsp; · &nbsp;&nbsp; [**Russian Repository ↗**](https://github.com/Mustafafathi/ais-system-ru)
 
-**Database scope**
+</div>
 
-`42` Tables &nbsp; / &nbsp; `125+` Stored Procedures &nbsp; / &nbsp; `17` Triggers
+#### System design
 
-The project was developed as my graduation project at NUST MISIS. AI coding tools were used as implementation assistance under my architecture, specifications, and review process.
+| Component | Implementation |
+|:--|:--|
+| Web application | PHP, JavaScript, HTML, CSS |
+| Database platform | Microsoft SQL Server 2022 |
+| Data access | SQLSRV, ODBC |
+| Business logic | T-SQL stored procedures and triggers |
+| Offline capability | IndexedDB and synchronization |
+| External integration | HMAC-secured webhooks, CSV / 1C:University |
 
-[Read the AI collaboration approach](https://github.com/Mustafafathi/ais-system-en/blob/main/AI_COLLABORATION.md)
+#### Engineering decisions
 
-## `03` / TECHNICAL STACK
+**Attendance validation**
 
-### Core technologies
+QR-based attendance sessions are validated on the server. The system checks session validity and prevents duplicate attendance records.
 
-<p align="left">
-  <img src="https://skillicons.dev/icons?i=php,js,html,css,python,dotnet" />
+**Offline-first check-in**
+
+Attendance records can be queued in the browser using IndexedDB and synchronized later. SHA-256 idempotency keys help prevent duplicate processing during synchronization.
+
+**Database-centred business logic**
+
+Core operations are implemented through SQL Server stored procedures and triggers, keeping important data operations close to the database.
+
+**Integration and security**
+
+HMAC-secured webhooks support integration with physical access-control systems. CSV exchange supports interaction with 1C:University.
+
+**Role-based workflows**
+
+The application supports five user groups: administrators, students, teachers, curators, and methodists.
+
+#### Database at a glance
+
+<div align="center">
+
+| 42 | 125+ | 17 |
+|:---:|:---:|:---:|
+| Tables | Stored Procedures | Triggers |
+
+</div>
+
+The project was developed as my graduation project. AI coding tools assisted implementation under my architecture, specifications, and review process.
+
+[AI collaboration documentation ↗](https://github.com/Mustafafathi/ais-system-en/blob/main/AI_COLLABORATION.md)
+
+---
+
+### 03 — Technical Foundation
+
+## Technologies & tools
+
+My primary implementation experience is centred on the technologies used to analyse, build, and maintain database-driven applications.
+
+**Application development**
+
+<p>
+  <img src="https://skillicons.dev/icons?i=php,js,html,css" alt="PHP, JavaScript, HTML and CSS"/>
 </p>
 
-**Database & data access**
+**Database engineering**
 
-<p align="left">
-  <img src="https://skillicons.dev/icons?i=mssql" />
+Microsoft SQL Server · T-SQL · SQLSRV · ODBC · Relational Data Modelling
+
+**Additional development**
+
+<p>
+  <img src="https://skillicons.dev/icons?i=python,dotnet,nodejs" alt="Python, .NET and Node.js"/>
 </p>
 
-Microsoft SQL Server · T-SQL · SQLSRV · ODBC · Relational Database Design
+These are also present in my development environment; they are not all part of the AIS implementation.
 
-**Development fundamentals**
+---
 
-Git · GitHub · REST concepts · Authentication · Role-Based Access Control · Data Integrity · System Integration
+### 04 — Working Environment
 
-## `04` / ENGINEERING ENVIRONMENT
+## A practical engineering toolkit.
 
-A selection of tools currently present in my development environment. This is an environment inventory, not a claim of equal proficiency across every tool.
+The following is a selection of installed tools and development utilities from my current environment.
 
-**Development & runtime**
+**IDEs & development environments**
 
-- Visual Studio Code, Visual Studio
-- Git, GitHub
-- PHP 8.3, XAMPP
-- Node.js, npm
-- Python 3.12
-- .NET SDK 9
-- PowerShell 7, Windows Terminal
+Visual Studio Code · Visual Studio · XAMPP · Git · GitHub
 
-**Database & integration**
+**Databases & enterprise systems**
 
-- Microsoft SQL Server 2022
-- SQL Server Management Studio 21
-- SQL Server Browser, `sqlcmd`
-- Microsoft ODBC Driver 17 and 18
-- Microsoft OLE DB Driver for SQL Server
-- 1C:Enterprise 8 — training version
-- Postman
+Microsoft SQL Server 2022 · SQL Server Management Studio 21 · ODBC Driver 17 / 18 · OLE DB Driver · 1C:Enterprise 8 (Training Version)
 
-**System & infrastructure tools**
+**Languages & runtimes**
 
-- Windows 11
-- Windows Subsystem for Linux (WSL)
-- Oracle VirtualBox
-- ngrok
-- FileZilla
-- draw.io
+PHP 8.3 · Python 3.12 · Node.js 24 · npm · .NET SDK 9 · PowerShell 7
+
+**System & integration utilities**
+
+Windows 11 · WSL · Oracle VirtualBox · Postman · ngrok · FileZilla · draw.io · Windows Terminal
 
 **AI-assisted development**
 
-- Claude Code
-- OpenCode
-- OpenAI Codex
-- ChatGPT
-- Claude
+Claude Code · OpenCode · OpenAI Codex · ChatGPT · Claude
 
 **VS Code extensions**
 
-Claude Code · Continue · Kilo Code · CodeRabbit · DSCodeGPT · PHP Intelephense · PHP Debug · Python / Pylance · C# Dev Kit · PowerShell · Prettier · YAML · Live Server
+PHP Intelephense · PHP Debug · Continue · Kilo Code · CodeRabbit · DSCodeGPT · Python / Pylance · C# Dev Kit · PowerShell · Prettier · YAML · Live Server
 
-## `05` / CURRENT DIRECTION
+---
 
-I am focused on strengthening my engineering practice in:
+### 05 — Engineering Interests
 
-- Information systems architecture and systems analysis.
-- SQL Server performance, data modelling, and database reliability.
-- Backend engineering and application integration.
-- Infrastructure fundamentals and software delivery workflows.
-- Practical use of AI-assisted software engineering.
+## What I am developing further.
 
-I value understanding the complete system—not only writing the code that implements one part of it.
+- Information systems architecture and requirements engineering.
+- Relational database design and SQL Server performance.
+- Backend development and enterprise application integration.
+- Infrastructure fundamentals and software delivery.
+- AI-assisted engineering workflows and implementation review.
+
+I value software that is not only functional, but also understandable, consistent, and maintainable.
 
 ---
 
 <div align="center">
 
-**SYSTEMS THINKING · STRUCTURED DATA · RELIABLE SOFTWARE**
+*Understand the process. Structure the data. Engineer the system.*
 
 <br/>
 
-[GitHub Profile](https://github.com/Mustafafathi) · [AIS — English](https://github.com/Mustafafathi/ais-system-en) · [AIS — Russian](https://github.com/Mustafafathi/ais-system-ru)
+[GitHub Profile](https://github.com/Mustafafathi)
 
 </div>
