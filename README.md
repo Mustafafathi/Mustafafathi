@@ -1,183 +1,196 @@
  <div align="center">
 
-# Mustafa Fathi
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:10172A,50:164E63,100:2563EB&height=210&section=header&text=Mustafa%20Fathi&fontSize=52&fontColor=FFFFFF&fontAlignY=38&desc=INFORMATION%20SYSTEMS%20ENGINEER%20%7C%20SOFTWARE%20DEVELOPER&descSize=13&descAlignY=60&animation=fadeIn" />
 
-**INFORMATION SYSTEMS ENGINEER**
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=17&duration=3000&pause=1000&color=38BDF8&center=true&vCenter=true&width=700&lines=Systems+Analyst+%7C+Software+Engineer;Designing+and+Building+Information+Systems;Database+Engineering+%7C+System+Integration;Turning+Business+Requirements+into+Solutions" />
 
-*Systems Analysis · Database Engineering · Software Development*
-
-<br/>
-
-I build information systems by connecting business processes, data architecture, and application logic.
-
-<br/>
-
-[GitHub](https://github.com/Mustafafathi) &nbsp; / &nbsp; [AIS — English](https://github.com/Mustafafathi/ais-system-en) &nbsp; / &nbsp; [AIS — Русский](https://github.com/Mustafafathi/ais-system-ru)
+<p>
+<img src="https://komarev.com/ghpvc/?username=Mustafafathi&style=for-the-badge&color=2563EB&label=PROFILE+VIEWS" />
+<img src="https://img.shields.io/github/followers/Mustafafathi?style=for-the-badge&color=0E7490&label=FOLLOWERS" />
+</p>
 
 </div>
 
 ---
 
-### 01 — Perspective
+## About Me
 
-## Engineering from the system level.
+I am an Information Systems Engineer focused on systems analysis, software architecture, backend development, and database engineering.
 
-My approach to software engineering starts before implementation: understanding how a process works, identifying its requirements, modelling its data, and translating that structure into a maintainable information system.
+I approach software development from a systems perspective: understanding business requirements, analyzing operational workflows, designing technical solutions, and implementing reliable information systems.
 
-I am particularly interested in the relationship between **business logic, database architecture, and application behaviour** — especially in systems where data integrity and operational reliability matter.
+My engineering interests include:
 
-My work brings together:
-
-- **Systems analysis** — requirements, business workflows, roles, and process modelling.
-- **Database engineering** — relational data models, SQL Server, and database-level logic.
-- **Backend development** — PHP applications, server-side processing, and authentication.
-- **System integration** — data exchange, webhooks, and connections with existing institutional systems.
+- Systems Analysis & Requirements Engineering
+- Software Architecture & Backend Development
+- Database Engineering & Business Logic
+- System Integration & Process Automation
+- Infrastructure Administration & Reliability
 
 ---
 
-### 02 — Selected Work
+## Technical Skills
 
-## AIS / Student Attendance Information System
+### Programming Languages
 
-**Graduation project · STI NUST MISIS**
+<p>
+<img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white"/>
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
+<img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=databricks&logoColor=white"/>
+</p>
 
-A web-based information system designed to manage student attendance workflows within a university environment.
+### Database Engineering
 
-The system brings together students, teachers, administrators, curators, and methodists through role-based workflows and a shared database.
+<p>
+<img src="https://img.shields.io/badge/Microsoft%20SQL%20Server-CC2927?style=for-the-badge&logo=microsoftsqlserver&logoColor=white"/>
+<img src="https://img.shields.io/badge/T--SQL-CC2927?style=for-the-badge&logo=microsoftsqlserver&logoColor=white"/>
+<img src="https://img.shields.io/badge/IndexedDB-315A75?style=for-the-badge"/>
+</p>
 
-<div align="center">
+### Web Development
 
-[**English Repository ↗**](https://github.com/Mustafafathi/ais-system-en) &nbsp;&nbsp; · &nbsp;&nbsp; [**Russian Repository ↗**](https://github.com/Mustafafathi/ais-system-ru)
+<p>
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
+<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
+<img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white"/>
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
+</p>
 
-</div>
+### Systems & Development Tools
 
-#### System design
+<p>
+<img src="https://img.shields.io/badge/Windows-0078D4?style=for-the-badge&logo=windows&logoColor=white"/>
+<img src="https://img.shields.io/badge/Windows%20Server-0078D4?style=for-the-badge&logo=windows&logoColor=white"/>
+<img src="https://img.shields.io/badge/PowerShell-5391FE?style=for-the-badge&logo=powershell&logoColor=white"/>
+<img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"/>
+<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
+<img src="https://img.shields.io/badge/Apache-D22128?style=for-the-badge&logo=apache&logoColor=white"/>
+</p>
+
+### Integration & Security
+
+<p>
+<img src="https://img.shields.io/badge/REST%20APIs-009688?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Webhooks-2563EB?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/HMAC-Security-475569?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/SHA--256-Data%20Integrity-475569?style=for-the-badge"/>
+</p>
+
+---
+
+## Featured Project
+
+### AIS — Student Attendance Information System
+
+<p align="center">
+<strong>STI NUST MISIS</strong>
+</p>
+
+A web-based student attendance management system developed to automate academic attendance workflows, improve data consistency, and integrate with existing university infrastructure.
+
+**Key Engineering Features**
 
 | Component | Implementation |
-|:--|:--|
-| Web application | PHP, JavaScript, HTML, CSS |
-| Database platform | Microsoft SQL Server 2022 |
-| Data access | SQLSRV, ODBC |
-| Business logic | T-SQL stored procedures and triggers |
-| Offline capability | IndexedDB and synchronization |
-| External integration | HMAC-secured webhooks, CSV / 1C:University |
+|---|---|
+| Attendance | QR-based session validation |
+| Offline Mode | IndexedDB browser storage |
+| Synchronization | SHA-256 idempotency keys |
+| Authentication | Role-based access control |
+| Integration | HMAC-secured webhooks |
+| University ERP | CSV exchange with 1C:University |
+| Backend | PHP |
+| Database | Microsoft SQL Server |
 
-#### Engineering decisions
+**Database Engineering**
 
-**Attendance validation**
+<p>
+<img src="https://img.shields.io/badge/42-Tables-2563EB?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/125-Stored%20Procedures-0E7490?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/17-Triggers-7C3AED?style=for-the-badge"/>
+</p>
 
-QR-based attendance sessions are validated on the server. The system checks session validity and prevents duplicate attendance records.
+**Source Code**
 
-**Offline-first check-in**
+<p>
+<a href="https://github.com/Mustafafathi/ais-system-en">
+<img src="https://img.shields.io/badge/English%20Repository-181717?style=for-the-badge&logo=github"/>
+</a>
+<a href="https://github.com/Mustafafathi/ais-system-ru">
+<img src="https://img.shields.io/badge/Russian%20Repository-181717?style=for-the-badge&logo=github"/>
+</a>
+</p>
 
-Attendance records can be queued in the browser using IndexedDB and synchronized later. SHA-256 idempotency keys help prevent duplicate processing during synchronization.
+### Architecture Overview
 
-**Database-centred business logic**
+```mermaid
+flowchart LR
+    subgraph Browser
+        UI["Role workspaces<br/>HTML, CSS, JavaScript"]
+        IDB[("IndexedDB<br/>offline queue")]
+    end
+    subgraph PHP["PHP application"]
+        API["API gateway<br/>sessions, validation, routing"]
+    end
+    subgraph SQL["Microsoft SQL Server"]
+        SP["Stored procedures<br/>business rules"]
+        TBL[("Domain tables")]
+        AUD[("Audit log")]
+        TRG["Triggers"]
+    end
+    ACS["Access-control system"] -- "HMAC-signed webhook" --> API
+    ERP["1C:University"] <-- "CSV import / export" --> API
+    UI --> API
+    IDB -. "sync with idempotency keys" .-> API
+    API --> SP
+    SP --> TBL
+    SP --> AUD
+    TRG --> AUD
+```
 
-Core operations are implemented through SQL Server stored procedures and triggers, keeping important data operations close to the database.
+## Engineering Focus
 
-**Integration and security**
+| Discipline | Practical Application |
+|---|---|
+| Systems Analysis | Requirements and workflow modeling |
+| Software Architecture | Application and database design |
+| Backend Engineering | Server-side business logic |
+| Database Engineering | Relational modeling and SQL optimization |
+| System Integration | Webhooks and external data exchange |
+| Reliability | Validation and duplicate prevention |
+| Automation | Academic workflow automation |
 
-HMAC-secured webhooks support integration with physical access-control systems. CSV exchange supports interaction with 1C:University.
+---
 
-**Role-based workflows**
-
-The application supports five user groups: administrators, students, teachers, curators, and methodists.
-
-#### Database at a glance
+## GitHub Analytics
 
 <div align="center">
 
-| 42 | 125+ | 17 |
-|:---:|:---:|:---:|
-| Tables | Stored Procedures | Triggers |
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=Mustafafathi&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&rank_icon=github"/>
+
+<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Mustafafathi&layout=compact&theme=tokyonight&hide_border=true&langs_count=8"/>
 
 </div>
 
-The project was developed as my graduation project. AI coding tools assisted implementation under my architecture, specifications, and review process.
+<div align="center">
 
-[AI collaboration documentation ↗](https://github.com/Mustafafathi/ais-system-en/blob/main/AI_COLLABORATION.md)
+<img width="75%" src="https://streak-stats.demolab.com?user=Mustafafathi&theme=tokyonight&hide_border=true"/>
 
----
+</div>
 
-### 03 — Technical Foundation
+## Contribution Activity
 
-## Technologies & tools
+<div align="center">
 
-My primary implementation experience is centred on the technologies used to analyse, build, and maintain database-driven applications.
+<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=Mustafafathi&theme=tokyo-night&hide_border=true&area=true"/>
 
-**Application development**
-
-<p>
-  <img src="https://skillicons.dev/icons?i=php,js,html,css" alt="PHP, JavaScript, HTML and CSS"/>
-</p>
-
-**Database engineering**
-
-Microsoft SQL Server · T-SQL · SQLSRV · ODBC · Relational Data Modelling
-
-**Additional development**
-
-<p>
-  <img src="https://skillicons.dev/icons?i=python,dotnet,nodejs" alt="Python, .NET and Node.js"/>
-</p>
-
-These are also present in my development environment; they are not all part of the AIS implementation.
-
----
-
-### 04 — Working Environment
-
-## A practical engineering toolkit.
-
-The following is a selection of installed tools and development utilities from my current environment.
-
-**IDEs & development environments**
-
-Visual Studio Code · Visual Studio · XAMPP · Git · GitHub
-
-**Databases & enterprise systems**
-
-Microsoft SQL Server 2022 · SQL Server Management Studio 21 · ODBC Driver 17 / 18 · OLE DB Driver · 1C:Enterprise 8 (Training Version)
-
-**Languages & runtimes**
-
-PHP 8.3 · Python 3.12 · Node.js 24 · npm · .NET SDK 9 · PowerShell 7
-
-**System & integration utilities**
-
-Windows 11 · WSL · Oracle VirtualBox · Postman · ngrok · FileZilla · draw.io · Windows Terminal
-
-**AI-assisted development**
-
-Claude Code · OpenCode · OpenAI Codex · ChatGPT · Claude
-
-**VS Code extensions**
-
-PHP Intelephense · PHP Debug · Continue · Kilo Code · CodeRabbit · DSCodeGPT · Python / Pylance · C# Dev Kit · PowerShell · Prettier · YAML · Live Server
-
----
-
-### 05 — Engineering Interests
-
-## What I am developing further.
-
-- Information systems architecture and requirements engineering.
-- Relational database design and SQL Server performance.
-- Backend development and enterprise application integration.
-- Infrastructure fundamentals and software delivery.
-- AI-assisted engineering workflows and implementation review.
-
-I value software that is not only functional, but also understandable, consistent, and maintainable.
+</div>
 
 ---
 
 <div align="center">
 
-*Understand the process. Structure the data. Engineer the system.*
+### Engineering reliable systems through analysis, architecture, and implementation.
 
-<br/>
-
-[GitHub Profile](https://github.com/Mustafafathi)
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:2563EB,100:10172A&height=110&section=footer"/>
 
 </div>
